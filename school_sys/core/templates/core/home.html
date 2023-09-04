@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Bem-vindo à nossa Escola</h1>
+
+<p>Aqui você encontrará informações sobre o calendário escolar, opções de comunicação com outros usuários e acesso rápido a outras funcionalidades do sistema.</p>
+
+<h2>Recursos Principais</h2>
+<ul>
+  <li><a href="{% url 'calendario' %}">Calendário Escolar</a></li>
+  <li><a href="{% url 'comunicacao' %}">Comunicação com Usuários</a></li>
+  <li><a href="{% url 'notas' %}">Notas</a></li>
+  <li><a href="{% url 'portal_noticias' %}">Portal de Notícias e Avisos</a></li>
+  <li><a href="{% url 'personalizacao' %}">Personalização de Perfis</a></li>
+</ul>
+{% endblock %}
