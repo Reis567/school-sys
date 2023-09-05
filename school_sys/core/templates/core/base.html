@@ -27,17 +27,18 @@
                 <a href="#">Comunicação</a>
                 <a href="#">Portal de Notícias</a>
 
-                <div class="box-actions">
-                    {% if user.is_authenticated %}
-                    <a href="#">Notas</a>
-                    <a href="#">Perfil</a>
-                    <a href="#">Logout</a>
-                    {% endif %}
-    
-                    <a href="#">Login</a>
-                </div>
+                
                 
         </nav>
+        <div class="box-acoes">
+            {% if user.is_authenticated %}
+            <a href="#">Notas</a>
+            <a href="#">Perfil</a>
+            <a href="#">Logout</a>
+            {% endif %}
+
+            <a href="#">Login</a>
+        </div>
         <!-- Espaço para ícones de redes sociais 
         <div class="redes-sociais">
             

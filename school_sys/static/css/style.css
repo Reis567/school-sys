@@ -13,10 +13,23 @@ body{
     font-family: 'Lato', sans-serif;
 }
 header{
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background: var(--black);
+    color: var(--white);
+}
+.title{
+    margin-left: 20px;
+}
+.box-acoes{
+    margin-right: 20px;
+}
+.box-acoes a{
+    color: var(--white);
+    margin-right: 20px;
 }
 .cabecalho{
     display: flex;
@@ -26,4 +39,5 @@ header{
 }
 .cabecalho a {
     margin-right: 20px; /* Adicione o espaçamento horizontal desejado aqui */
+    color: var(--white);
 }
