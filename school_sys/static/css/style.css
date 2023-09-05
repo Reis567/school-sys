@@ -1,8 +1,9 @@
 :root{
     --prim-color:#8474ef;
     --sec-color:#5544bd;
+    --stgr-color:#1d1550;
     --th-color:#ADD8E6;
-    --qt-color:#597878;
+    --qt-color:#6f9797;
     --black:#09061c;
     --white: #f2f2f2;
 }
@@ -11,6 +12,7 @@
 body{
     height: 100vh;
     font-family: 'Lato', sans-serif;
+    background: var(--qt-color);
 }
 header{
     height: 70px;
@@ -23,6 +25,18 @@ header{
 }
 .title{
     margin-left: 20px;
+    font-weight: bold;
+}
+
+.tituloEscola h1{
+    font-size: 55px;
+    color: var(--stgr-color);
+
+}
+.tituloEscola h1 span{
+    font-size: 65px;
+    color: var(--black);
+
 }
 .box-acoes{
     margin-right: 20px;
@@ -31,13 +45,24 @@ header{
     color: var(--white);
     margin-right: 20px;
 }
-.cabecalho{
+nav{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.cabecalho a {
+.nav-links {
     margin-right: 20px; /* Adicione o espaçamento horizontal desejado aqui */
     color: var(--white);
+}
+
+.homeContainer{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
 }
