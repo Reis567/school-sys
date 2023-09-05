@@ -29,6 +29,7 @@ header{
 }
 
 .tituloEscola h1{
+    letter-spacing: 4px;
     font-size: 55px;
     color: var(--stgr-color);
 
@@ -65,4 +66,14 @@ nav{
     flex-wrap: wrap;
     align-items: center;
     min-height: 650px;
+}
+
+.Box-img-estudante{
+    max-width: 450px;
+    padding: 1rem;
+}
+
+.img-estudante{
+    border-radius: 60%;
+    width: 100%;
 }
