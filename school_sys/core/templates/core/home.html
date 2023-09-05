@@ -1,16 +1,30 @@
 {% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Homepage {% endblock title %}
 
 {% block content %}
-<h1>Bem-vindo à nossa Escola</h1>
+<section class="homeContainer">
 
-<p>Aqui você encontrará informações sobre o calendário escolar, opções de comunicação com outros usuários e acesso rápido a outras funcionalidades do sistema.</p>
+          <div class="tituloEscola">
+              <h1>
+                <span>
+                  Escola
+                </span>
+                Universo do Conhecimento
+              </h1>
+        </div>
 
-<h2>Recursos Principais</h2>
-<ul>
-  <li><a href="#">Calendário Escolar</a></li>
-  <li><a href="#">Comunicação com Usuários</a></li>
-  <li><a href="#">Notas</a></li>
-  <li><a href="#">Portal de Notícias e Avisos</a></li>
-  <li><a href="#">Personalização de Perfis</a></li>
-</ul>
-{% endblock %}
+
+        <div class="Box-img-estudante">
+          <img class="img-estudante" src="{% static 'images/estudante.jpg' %}" alt="Estudante">
+        </div>
+
+</section>
+
+
+{% endblock content %}
+
+
+
+

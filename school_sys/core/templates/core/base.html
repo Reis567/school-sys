@@ -2,23 +2,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Título Aqui</title>
+    <title>{% block title %}{% endblock title %}- EUC</title>
     <link rel="stylesheet" href="{% static 'css/reset.css' %}">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Página Inicial</a></li>
-                <li><a href="#">Calendário</a></li>
-                <li><a href="#}">Comunicação</a></li>
-                <li><a href="#">Notas</a></li>
-                <li><a href="#">Portal de Notícias</a></li>
-                <li><a href="#">Perfil</a></li>
-            </ul>
+        <div class="title">
+            <h1>
+                EUC
+                <!-- Escola Universo do Conhecimento -->
+            </h1>
+        </div>
+        <nav class="cabecalho">
+            
+            
+                <a href="#">Página Inicial</a>
+                <a href="#">Calendário</a>
+                <a href="#">Comunicação</a>
+                <a href="#">Portal de Notícias</a>
+
+                <div class="box-actions">
+                    {% if user.is_authenticated %}
+                    <a href="#">Notas</a>
+                    <a href="#">Perfil</a>
+                    <a href="#">Logout</a>
+                    {% endif %}
+    
+                    <a href="#">Login</a>
+                </div>
+                
         </nav>
         <!-- Espaço para ícones de redes sociais 
         <div class="redes-sociais">
@@ -30,7 +48,9 @@
     </header>
     
     <main>
-        {% block content %}{% endblock %}
+        {% block content %}
+        
+        {% endblock content %}
     </main>
 
     <footer>

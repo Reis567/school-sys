@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.cabecalho a {
+    margin-right: 20px; /* Adicione o espaçamento horizontal desejado aqui */
+}
