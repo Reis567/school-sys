@@ -30,12 +30,12 @@ header{
 
 .tituloEscola h1{
     letter-spacing: 4px;
-    font-size: 55px;
+    font-size: 100px;
     color: var(--stgr-color);
 
 }
 .tituloEscola h1 span{
-    font-size: 65px;
+    font-size: 85px;
     color: var(--black);
 
 }
@@ -70,7 +70,7 @@ nav{
 
 .Box-img-estudante{
     max-width: 450px;
-    padding: 1rem;
+
 }
 
 .img-estudante{
