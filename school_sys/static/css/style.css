@@ -54,8 +54,16 @@ nav{
     flex-wrap: wrap;
 }
 .nav-links {
-    margin-right: 20px; /* Adicione o espaçamento horizontal desejado aqui */
+    margin-right: 20px;
     color: var(--white);
+    text-shadow: 0 0 0 transparent;
+    transition: text-shadow 0.3s ease; 
+}
+
+.nav-links:hover {
+    text-shadow: 0 0 5px var(--prim-color),
+                 0 0 25px var(--prim-color);
+    cursor: pointer;
 }
 
 .homeContainer{
