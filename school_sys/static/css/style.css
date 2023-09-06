@@ -66,6 +66,19 @@ nav{
     cursor: pointer;
 }
 
+.acoes-links {
+    margin-right: 20px;
+    color: var(--white);
+    text-shadow: 0 0 0 transparent;
+    transition: text-shadow 0.3s ease; 
+}
+
+.acoes-links:hover {
+    text-shadow: 0 0 5px var(--prim-color),
+                 0 0 25px var(--prim-color);
+    cursor: pointer;
+}
+
 .homeContainer{
     height: 100vh;
     display: flex;
