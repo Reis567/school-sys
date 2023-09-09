@@ -32,13 +32,17 @@
 
         <div class="box-acoes">
             {% if user.is_authenticated %}
+            <!-- Se o usuário está autenticado, exiba links para Notas, Perfil e Logout -->
             <a href="#" class="acoes-links">Notas</a>
             <a href="#" class="acoes-links">Perfil</a>
-            <a href="#" class="acoes-links">Logout</a>
+            <a href="{% url 'logout' %}" class="acoes-links">Logout</a>
+            {% else %}
+            <!-- Se o usuário NÃO está autenticado, exiba links para Login e Registro -->
+            <a href="{% url 'login' %}" class="acoes-links">Login</a>
+            <a href="{% url 'register' %}" class="acoes-links">Register</a>
             {% endif %}
-
-            <a href="#" class="acoes-links">Login</a>
         </div>
+        
         <!-- Espaço para ícones de redes sociais 
         <div class="redes-sociais">
             
