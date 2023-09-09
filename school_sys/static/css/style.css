@@ -15,6 +15,9 @@ body{
     background: var(--qt-color);
 }
 header{
+    position: fixed;
+    top: 0%;
+    width: 100%;
     height: 70px;
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ header{
     background: var(--black);
     color: var(--white);
 }
+
 .title{
     margin-left: 20px;
     font-weight: bold;
@@ -97,4 +101,26 @@ nav{
 .img-estudante{
     border-radius: 60%;
     width: 100%;
+}
+
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background: var(--black);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    color: var(--white);
+}
+
+footer a:hover{
+    text-shadow: 0 0 5px var(--prim-color),
+                 0 0 25px var(--prim-color);
+    cursor: pointer;
+    transition: .5s;
 }
